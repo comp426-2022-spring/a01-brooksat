@@ -31,7 +31,7 @@ if(err) {
 // 3. end with the data that you are reading in from ./www/index.html.
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
-    res.setHeader("Constant-Type", "text/html")
+    res.setHeader("Content-Type", "text/html")
     res.end(data)
   })
 
